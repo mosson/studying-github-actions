@@ -12,6 +12,6 @@ jobs:
           deno-version: 1.12.2
       - name: "Runs Test"
         run: |
-          deno test **/*
+          deno test ${{ github.workspace }}/**/*
       - run: echo "This jobs's status is ${{ job.status }}."
       
