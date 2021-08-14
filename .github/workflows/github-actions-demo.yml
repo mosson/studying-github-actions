@@ -14,7 +14,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-			- name: Exit 1
+			- name: Exit with error code
         run: |
           cat hogehoge
 			- name: echo "Print last status"
