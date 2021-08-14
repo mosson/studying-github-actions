@@ -15,6 +15,7 @@ jobs:
           deno --version
       - name: "Runs Test"
         run: |
+          shopt -s globstar
           deno test ./**/*.ts
       - run: echo "This jobs's status is ${{ job.status }}."
       
