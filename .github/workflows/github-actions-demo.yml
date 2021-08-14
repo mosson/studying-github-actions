@@ -14,8 +14,7 @@ jobs:
         run: |
           deno --version
       - name: "Runs Test"
-        working-directory: ${{ env.working-directory }}
         run: |
-          deno test ./**/*-test.ts
+          deno test ${{ env.working-directory }}/**/*-test.ts
       - run: echo "This jobs's status is ${{ job.status }}."
       
