@@ -16,6 +16,6 @@ jobs:
       - name: "Runs Test"
         working-directory: ${{ env.working-directory }}
         run: |
-          deno test /**/*
+          deno test ./**/*
       - run: echo "This jobs's status is ${{ job.status }}."
       
