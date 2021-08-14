@@ -15,6 +15,6 @@ jobs:
           deno --version
       - name: "Runs Test"
         run: |
-          deno test ${{ env.working-directory }}/**/*-test.ts
+          deno test ${{ github.workspace }}/**/*-test.ts
       - run: echo "This jobs's status is ${{ job.status }}."
       
